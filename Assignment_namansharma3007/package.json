@@ -1,0 +1,14 @@
+{
+  "name": "Assignment_namansharma3007",
+  "private": true,
+  "workspaces": [
+    "log-ingestor-project",
+    "backend"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn workspace log-ingestor-project start\" \"yarn workspace backend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
